@@ -20,7 +20,7 @@
 
 
 
-\## 1. The Actual Scenario
+\## 1. The Existing Issues
 
 \- \*\*Clinical Goal:\*\* Safely collect, store, and share large-scale Electronic Health Records (EHRs) between hospitals and researchers without communication delays.
 
