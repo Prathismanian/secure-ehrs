@@ -20,3 +20,13 @@ In real clinical environments (e.g., EU/German hospital Trusted Research Environ
   3. `ca` (Major Vessels Colored): `11.3%`
   4. `thal` (Thalassemia Defect): `10.1%`
   5. `oldpeak` (ST Depression): `9.8%`
+
+
+## Reading Log
+
+My research papers on electronic Health Records data security and privacy-preserving using machine learning techniques.
+
+| # | Paper Title | Key Topics | Notes |
+| :--- | :--- | :--- | :--- |
+| 01 | An Efficient CH-Based Authentication and Authorization for Secure EHR Using DF-BCrypt and Hashed Access Structure | Authentication, SHA-512 Hash Tree, Elliptic Curve Cryptography | [Read Summary](./journals/01-ch-df-bcrypt-ehr.md) |
+
