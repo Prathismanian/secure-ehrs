@@ -36,3 +36,6 @@
   - *Federated Averaging (FedAvg):* The standard algorithm that combines model weights trained at different hospitals into one shared model.
   - *Non-IID Data:* Data that is not identically distributed across hospitals (e.g., one clinic sees mostly older heart patients while another sees younger patients).
 - **can this be coded?** Yes — I can split my heart disease dataset into 2 or 3 simulated "hospitals" in Python, train separate models on each split, and average their weights!
+
+- **Real-Data Experiment (`src/federated_kaggle_heart.py`):** Tested Federated Averaging across 2 simulated hospitals on 1,025 real patient records from Kaggle (`Data/heart.csv`). Hospital A scored 78.21%, Hospital B scored 78.21%, and the combined Federated Global Model outperformed both at **78.60%** without sharing raw patient records!
+
