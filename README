@@ -28,5 +28,6 @@ My research papers on electronic Health Records data security and privacy-preser
 
 | # | Paper Title | Key Topics | Notes |
 | :--- | :--- | :--- | :--- |
-| 01 | An Efficient CH-Based Authentication and Authorization for Secure EHR Using DF-BCrypt and Hashed Access Structure | Authentication, SHA-512 Hash Tree, Elliptic Curve Cryptography | [Read Summary](./journals/01-ch-df-bcrypt-ehr.md) |
+| 01 | An Efficient CH-Based Authentication and Authorization for Secure EHR Using DF-BCrypt and Hashed Access Structure | Authentication, SHA-512 Hash Tree, Elliptic Curve Cryptography |(./journals/01-ch-df-bcrypt-ehr.md) |
+ 02 | Federated Learning for Smart Healthcare: A Survey | Federated Learning, Healthcare AI, Data Privacy | (./papers/02-federated-learning-healthcare.md) |
 
