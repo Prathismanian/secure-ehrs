@@ -20,7 +20,9 @@
 
 
 
-\## 1. The Existing Issues
+\## 1.Issues considered
+
+\- \*\*I have taken my published journal and implemented it for Machine Learning to secure clinical outputs.
 
 \- \*\*Clinical Goal:\*\* Safely collect, store, and share large-scale Electronic Health Records (EHRs) between hospitals and researchers without communication delays.
 
@@ -30,7 +32,7 @@
 
 \## 2. Proposed Solution
 
-The authors designed a three-part security pipeline covering \*\*Authentication\*\* (who you are), \*\*Authorization\*\* (what you can access), and \*\*Data Encryption\*\* (locking the medical files):
+The design consists of a three-part security pipeline covering \*\*Authentication\*\* (who you are), \*\*Authorization\*\* (what you can access), and \*\*Data Encryption\*\* (locking the medical files):
 
 
 
@@ -58,7 +60,7 @@ The authors designed a three-part security pipeline covering \*\*Authentication\
 
 \- \*\*Dataset / Environment Used:\*\* Large-scale Electronic Health Record (EHR) data\ https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset
 
-\- \*\*Core Algorithms:\*\* HPU-PPCC, Digit Folding BCrypt (DF-BCrypt), SHA-512 Hash Tree, and Coefficient-based Elliptic Curve Cryptography (CCECC).
+\- \*\*Core Algorithms i used:\*\* HPU-PPCC, Digit Folding BCrypt (DF-BCrypt), SHA-512 Hash Tree, and Coefficient-based Elliptic Curve Cryptography (CCECC).
 
 
 
@@ -66,27 +68,27 @@ The authors designed a three-part security pipeline covering \*\*Authentication\
 
 \- \*\*Main Result:\*\* Compared against existing EHR security methods, the proposed framework successfully prevented data tampering and improved authentication/authorization security while keeping processing efficient.
 
-\- \*\*Limitations / Trade-offs:\*\* 
+\- \*\*Limitations /*\* 
 
 &#x20; - \*\*Multi-Step Pipeline:\*\* Chaining multiple transformations (Caesar Cipher + Public/Private keys + Digit Folding + BCrypt + SHA-512 + CCECC) requires careful implementation across hospital systems.
 
-&#x20; - \*\*Relevance to ML:\*\* While this paper does not train a machine learning model directly, it solves a major real-world hurdle for clinical ML: \*\*how researchers can securely receive and verify untampered EHR datasets\*\* before running ML experiments.
+&#x20; - \*\*what it does for ML:\*\* While this paper does not train a machine learning model directly, it solves a major real-world hurdle for Healthcare (clinical) ML: \*\*and how researchers can securely receive and verify untampered EHR datasets\*\* before running ML experiments.
 
 
 
-\## 5. My Personal Takeaways
+\## 5. My Observations
 
 \- \*\*What I learned:\*\* Before we even run an ML model on medical data, hospitals need strong \*Cipher Hashing\* (authentication), \*Hash Trees\* (authorization), and \*Elliptic Curve Cryptography\* (encryption) so patient records aren't altered or leaked in transit.
 
-\- \*\*New terms I had to look up:\*\* 
+\- \*\*Crypto techniques I have used:\*\* 
 
-&#x20; - \*Digit Folding:\* A hashing technique where a long number/string is split into equal parts and added/combined together to produce a compact hash value.
+&#x20; - \*Digital Folding:\* A hashing technique where a long number/string is split into equal parts and added/combined together to produce a compact hash value.
 
 &#x20; - \*SHA-512 Hash Tree:\* A tree structure of cryptographic hashes (512-bit) that lets a system quickly verify permissions and check that data hasn't been tampered with.
 
 &#x20; - \*Elliptic Curve Cryptography (ECC):\* A fast, modern encryption method that provides strong security using much smaller keys than older methods like RSA.
 
-\- \*\*Can I try this in code?\*\* Yes — in Python, I can use the built-in `hashlib` library (`hashlib.sha512`) and the `bcrypt` package to practice hashing user/patient IDs before loading my sample heart disease dataset!
+\- \*\*Can I try this code?\*\* Yes — in Python,using the built-in `hashlib` library (`hashlib.sha512`) and the `bcrypt` package to practice hashing user/patient IDs before loading my sample heart disease dataset!
 
 
 
