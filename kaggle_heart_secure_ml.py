@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 # ==============================================================================
 # PART 1: Load Real Kaggle Heart Disease Data + Simulate Raw Hospital IDs
 # ==============================================================================
-def load_hospital_ehr(csv_path="data/heart.csv"):
+def load_hospital_ehr(csv_path="data/heart.csvGet-ChildItem -Recurse -Name"):
     df = pd.read_csv(csv_path)
 
     # Simulate private hospital identifiers that exist in real EHR databases
